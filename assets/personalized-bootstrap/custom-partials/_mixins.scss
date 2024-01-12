@@ -1,0 +1,23 @@
+// to center element in the page
+@mixin gettingCentered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// to add evenly space
+
+@mixin sameSpace {
+  margin: $main-margin;
+  padding: $main-padding;
+}
+
+//adding animation on "movies"
+@mixin movieTransition {
+  transition: width 2s ease-in-out 0s, height 2s ease-in-out 0s;
+
+  &:hover {
+    width: 120%;
+    height: 100%;
+  }
+}

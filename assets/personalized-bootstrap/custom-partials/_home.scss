@@ -1,0 +1,17 @@
+.figure {
+  @include movieTransition;
+  &:hover {
+    z-index: 1;
+  }
+}
+main,
+.row {
+  @include sameSpace;
+}
+
+.footer-icons {
+  @include gettingCentered;
+  li {
+    @include sameSpace;
+  }
+}

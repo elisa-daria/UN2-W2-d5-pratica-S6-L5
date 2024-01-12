@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Netflix-Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/personalized-bootstrap/home-custom-bootstrap.css"
+    />
+  </head>
+  <body class="bg bg-primary">
+    <header>
+      <nav class="navbar navbar-expand-lg bg bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="https://www.netflix.com/">
+            <img
+              src="./assets/imgs/netflix_logo.png"
+              alt="Logo"
+              width="95px"
+              height="55px"
+              class="d-inline-block align-text-top"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-light" aria-current="page" href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" href="#">Tv Shows</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Recently Added</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">My list</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <span class="navbar-text text-light me-3">
+                <i class="bi bi-search"></i>
+              </span>
+              <span class="navbar-text text-light"> KIDS </span>
+              <span class="navbar-text text-light">
+                <i class="bi bi-bell-fill ms-2"></i>
+              </span>
+              <li class="nav-item dropdown ms-2">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    class="img-fluid"
+                    src="./assets/imgs/avatar.png"
+                    alt="Logo"
+                    class="d-inline-block align-text-top"
+                    width="40px"
+                    height="40px"
+                  />
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./account.html"
+                      target="_blank"
+                      >Account</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="container">
+        <div class="row row-cols-1 g-5 row-cols-md-3">
+          <div class="col"><h1 class="text-light">TV Shows</h1></div>
+          <div class="col">
+            <div class="dropdown">
+              <button
+                class="btn btn-outline-light rounded-0 dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Genres
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Crime</a></li>
+                <li><a class="dropdown-item" href="#">LGBTQ+</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Comedy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+            <span><i class="bi bi-card-list text-light"></i></span>
+            <span><i class="bi bi-view-list text-light"></i></span>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="container">
+        <div class="d-flex justify-content-between">
+          <h3 class="text-light">Trending Now</h3>
+          <button
+            type="button"
+            class="btn btn-sm btn-outline-danger border-0 align-self-center mb-4 d-md-none"
+            data-bs-toggle="collapse"
+            data-bs-target=".collapseMovie"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+          >
+            Show less
+          </button>
+        </div>
+        <article class="row row-cols-1 row-cols-md-6">
+          <div class="'col">
+            <figure class="figure collapseMovie position-relative">
+              <img
+                src="./assets/imgs/media/media0.webp"
+                class="figure-img img-fluid rounded"
+                alt=" cover-media on Netflix"
+              />
+              <figcaption
+                class="figure-caption text-end position-absolute top-0 start-0"
+              >
+                <img
+                  src="./assets/imgs/netflix_logo.png"
+                  alt="Logo"
+                  width="95px"
+                  height="55px"
+                />
+              </figcaption>
+              <figurecaption class="">
+                <span
+                  class="badge bg-danger fw-100 position-absolute bottom-0 start-0 rounded-0"
+                  >NEW EPISODES</span
+                >
+              </figurecaption>
+            </figure>
+          </div>
+          <div class="'col">
+            <figure class="figure collapseMovie position-relative">
+              <img
+                src="./assets/imgs/media/media2.webp"
+                class="figure-img img-fluid rounded"
+                alt=" cover-media on Netflix"
+              />
+              <figcaption
+                class="figure-caption text-end position-absolute top-0 start-0"
+              >
+                <img
+                  src="./assets/imgs/netflix_logo.png"
+                  alt="Logo"
+                  width="95px"
+                  height="55px"
+                />
+              </figcaption>
+            </figure>
+          </div>
+          <div class="'col">
+            <figure class="figure collapseMovie position-relative">
+              <img
+                src="./assets/imgs/media/media3.webp"
+                class="figure-img img-fluid rounded"
+                alt=" cover-media on Netflix"
+              />
+              <figcaption
+                class="figure-caption text-end position-absolute top-0 start-0"
+              >
+                <img
+                  src="./assets/imgs/netflix_logo.png"
+                  alt="Logo"
+                  width="95px"
+                  height="55px"
+                />
+              </figcaption>
+            </figure>
+          </div>
+          <div class="'col">
+            <figure class="figure collapseMovie position-relative">
+              <img
+                src="./assets/imgs/media/media4.jpg"
+                class="figure-img img-fluid rounded"
+                alt=" cover-media on Netflix"
+              />
+              <figcaption
+                class="figure-caption text-end position-absolute top-0 start-0"
+              >
+                <img
+                  src="./assets/imgs/netflix_logo.png"
+                  alt="Logo"
+                  width="95px"
+                  height="55px"
+                />
+              </figcaption>
+              <figurecaption class="">
+                <span
+                  class="badge bg-danger fw-100 position-absolute bottom-0 start-0 rounded-0"
+                  >NEW EPISODES</span
+                >
+              </figurecaption>
+            </figure>
+          </div>
+          <div class="'col">
+            <figure class="figure position-relative">
+              <img
+                src="./assets/imgs/media/media5.webp"
+                class="figure-img img-fluid rounded"
+                alt=" cover-media on Netflix"
+              />
+              <figcaption
+                class="figure-caption text-end position-absolute top-0 start-0"
+              >
+                <img
+                  src="./assets/imgs/netflix_logo.png"
+                  alt="Logo"
+                  width="95px"
+                  height="55px"
+                />
+              </figcaption>
+            </figure>
+          </div>
+          <div class="'col">
+            <figure class="figure position-relative">
+              <img
+                src="./assets/imgs/media/media6.jpg"
+                class="figure-img img-fluid rounded"
+                alt=" cover-media on Netflix"
+              />
+              <figcaption
+                class="figure-caption text-end position-absolute top-0 start-0"
+              >
+                <img
+                  src="./assets/imgs/netflix_logo.png"
+                  alt="Logo"
+                  width="95px"
+                  height="55px"
+                />
+              </figcaption>
+            </figure>
+          </div>
+        </article>
+        <div class="d-flex justify-content-between">
+          <h3 class="text-light">Watch It Again</h3>
+          <button
+            type="button"
+            class="btn btn-sm btn-outline-danger border-0 align-self-center mb-4 d-md-none"
+            data-bs-toggle="collapse"
+            data-bs-target=".collapseMovie"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+          >
+            Show less
+          </button>
+        </div>
+        <article class="row row-cols-1 row-cols-md-6">
+          <div class="'col">
+            <figure class="figure collapseMovie position-relative">
+              <img
+                src="./assets/imgs/media/media1.jpg"
+                class="figure-img img-fluid rounded"
+                alt=" cover-media on Netflix"
+              />
+              <figcaption
+                class="figure-caption text-end position-absolute top-0 start-0"
+              >
+                <img
+                  src="./assets/imgs/netflix_logo.png"
+                  alt="Logo"
+                  width="95px"
+                  height="55px"
+                />
+              </figcaption>
+            </figure>
+          </div>
+          <div class="'col">
+            <figure class="figure collapseMovie position-relative">
+              <img
+                src="./assets/imgs/media/media7.webp"
+                class="figure-img img-fluid rounded"
+                alt=" cover-media on Netflix"
+              />
+              <figcaption
+                class="figure-caption text-end position-absolute top-0 start-0"
+              >
+                <img
+                  src="./assets/imgs/netflix_logo.png"
+                  alt="Logo"
+                  width="95px"
+                  height="55px"
+                />
+              </figcaption>
+            </figure>
+          </div>
+          <div class="'col">
+            <figure class="figure collapseMovie position-relative">
+              <img
+                src="./assets/imgs/media/media8.webp"
+                class="figure-img img-fluid rounded"
+                alt=" cover-media on Netflix"
+              />
+              <figcaption
+                class="figure-caption text-end position-absolute top-0 start-0"
+              >
+                <img
+                  src="./assets/imgs/netflix_logo.png"
+                  alt="Logo"
+                  width="95px"
+                  height="55px"
+                />
+              </figcaption>
+            </figure>
+          </div>
+          <div class="'col">
+            <figure class="figure collapseMovie position-relative">
+              <img
+                src="./assets/imgs/media/media9.jpg"
+                class="figure-img img-fluid rounded"
+                alt=" cover-media on Netflix"
+              />
+              <figcaption
+                class="figure-caption text-end position-absolute top-0 start-0"
+              >
+                <img
+                  src="./assets/imgs/netflix_logo.png"
+                  alt="Logo"
+                  width="95px"
+                  height="55px"
+                />
+              </figcaption>
+            </figure>
+          </div>
+          <div class="'col">
+            <figure class="figure position-relative">
+              <img
+                src="./assets/imgs/media/media10.jpg"
+                class="figure-img img-fluid rounded"
+                alt=" cover-media on Netflix"
+              />
+              <figcaption
+                class="figure-caption text-end position-absolute top-0 start-0"
+              >
+                <img
+                  src="./assets/imgs/netflix_logo.png"
+                  alt="Logo"
+                  width="95px"
+                  height="55px"
+                />
+              </figcaption>
+            </figure>
+          </div>
+          <div class="'col">
+            <figure class="figure position-relative">
+              <img
+                src="./assets/imgs/media/media11.jpg"
+                class="figure-img img-fluid rounded"
+                alt=" cover-media on Netflix"
+              />
+              <figcaption
+                class="figure-caption text-end position-absolute top-0 start-0"
+              >
+                <img
+                  src="./assets/imgs/netflix_logo.png"
+                  alt="Logo"
+                  width="95px"
+                  height="55px"
+                />
+              </figcaption>
+            </figure>
+          </div>
+        </article>
+        <div class="d-flex justify-content-between">
+          <h3 class="text-light">New Releases</h3>
+          <button
+            type="button"
+            class="btn btn-sm btn-outline-danger border-0 align-self-center mb-4 d-md-none"
+            data-bs-toggle="collapse"
+            data-bs-target=".collapseMovie"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+          >
+            Show less
+          </button>
+        </div>
+        <article class="row row-cols-1 row-cols-md-6">
+          <div class="'col">
+            <figure class="figure collapseMovie position-relative">
+              <img
+                src="./assets/imgs/media/media12.jpg"
+                class="figure-img img-fluid rounded"
+                alt=" cover-media on Netflix"
+              />
+              <figcaption
+                class="figure-caption text-end position-absolute top-0 start-0"
+              >
+                <img
+                  src="./assets/imgs/netflix_logo.png"
+                  alt="Logo"
+                  width="95px"
+                  height="55px"
+                />
+              </figcaption>
+            </figure>
+          </div>
+          <div class="'col">
+            <figure class="figure collapseMovie position-relative">
+              <img
+                src="./assets/imgs/media/media13.jpg"
+                class="figure-img img-fluid rounded"
+                alt=" cover-media on Netflix"
+              />
+              <figcaption
+                class="figure-caption text-end position-absolute top-0 start-0"
+              >
+                <img
+                  src="./assets/imgs/netflix_logo.png"
+                  alt="Logo"
+                  width="95px"
+                  height="55px"
+                />
+              </figcaption>
+            </figure>
+          </div>
+          <div class="'col">
+            <figure class="figure collapseMovie position-relative">
+              <img
+                src="./assets/imgs/media/media14.webp"
+                class="figure-img img-fluid rounded"
+                alt=" cover-media on Netflix"
+              />
+              <figcaption
+                class="figure-caption text-end position-absolute top-0 start-0"
+              >
+                <img
+                  src="./assets/imgs/netflix_logo.png"
+                  alt="Logo"
+                  width="95px"
+                  height="55px"
+                />
+              </figcaption>
+            </figure>
+          </div>
+          <div class="'col">
+            <figure class="figure collapseMovie position-relative">
+              <img
+                src="./assets/imgs/media/media15.jpg"
+                class="figure-img img-fluid rounded"
+                alt=" cover-media on Netflix"
+              />
+              <figcaption
+                class="figure-caption text-end position-absolute top-0 start-0"
+              >
+                <img
+                  src="./assets/imgs/netflix_logo.png"
+                  alt="Logo"
+                  width="95px"
+                  height="55px"
+                />
+              </figcaption>
+            </figure>
+          </div>
+          <div class="'col">
+            <figure class="figure position-relative">
+              <img
+                src="./assets/imgs/media/media16.webp"
+                class="figure-img img-fluid rounded"
+                alt=" cover-media on Netflix"
+              />
+              <figcaption
+                class="figure-caption text-end position-absolute top-0 start-0"
+              >
+                <img
+                  src="./assets/imgs/netflix_logo.png"
+                  alt="Logo"
+                  width="95px"
+                  height="55px"
+                />
+              </figcaption>
+            </figure>
+          </div>
+          <div class="'col">
+            <figure class="figure position-relative">
+              <img
+                src="./assets/imgs/media/media17.jpg"
+                class="figure-img img-fluid rounded"
+                alt=" cover-media on Netflix"
+              />
+              <figcaption
+                class="figure-caption text-end position-absolute top-0 start-0"
+              >
+                <img
+                  src="./assets/imgs/netflix_logo.png"
+                  alt="Logo"
+                  width="95px"
+                  height="55px"
+                />
+              </figcaption>
+            </figure>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <ul class="footer-icons">
+        <li><i class="bi bi-facebook text-i-gray"></i></li>
+        <li><i class="bi bi-twitter text-i-gray"></i></li>
+        <li><i class="bi bi-youtube text-i-gray"></i></li>
+        <li><i class="bi bi-instagram text-i-gray"></i></li>
+      </ul>
+      <section class="container">
+        <div class="row row-cols-1 gy-3 row-cols-md-4">
+          <div class="col">
+            <div class="card border-0 bg bg-transparent">
+              <ul
+                class="list-group list-group-flush bg bg-transparent text-i-gray"
+              >
+                <li
+                  class="list-group-item bg bg-transparent fw-100 text-i-gray border-0"
+                >
+                  Audio and subtitles
+                </li>
+                <li
+                  class="list-group-item fw-100 text-i-gray bg bg-transparent border-0"
+                >
+                  Media
+                </li>
+                <li
+                  class="list-group-item fw-100 text-i-gray bg bg-transparent border-0"
+                >
+                  Privacy
+                </li>
+                <li
+                  class="list-group-item fw-100 text-i-gray bg bg-transparent"
+                >
+                  Contact Us
+                </li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="btn rounded-0 btn-outline-light"
+                  >Service Code</a
+                >
+                <p class="text-i-gray fw-100 fs-6 mt-2">
+                  1997-2019 Netflix, inc
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 bg bg-transparent">
+              <ul
+                class="list-group list-group-flush bg bg-transparent text-i-gray"
+              >
+                <li
+                  class="list-group-item bg bg-transparent fw-100 text-i-gray border-0"
+                >
+                  Audio desciption
+                </li>
+                <li
+                  class="list-group-item fw-100 text-i-gray bg bg-transparent border-0"
+                >
+                  Investrors
+                </li>
+                <li
+                  class="list-group-item fw-100 text-i-gray bg bg-transparent border-0"
+                >
+                  Legal Notices
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 bg bg-transparent">
+              <ul
+                class="list-group list-group-flush bg bg-transparent text-i-gray"
+              >
+                <li
+                  class="list-group-item bg bg-transparent fw-100 text-i-gray border-0"
+                >
+                  Help Center
+                </li>
+                <li
+                  class="list-group-item fw-100 text-i-gray bg bg-transparent border-0"
+                >
+                  Jobs
+                </li>
+                <li
+                  class="list-group-item fw-100 text-i-gray bg bg-transparent border-0"
+                >
+                  Cookie Preferences
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 bg-transparent">
+              <ul
+                class="list-group list-group-flush bg bg-transparent text-i-gray"
+              >
+                <li
+                  class="list-group-item bg bg-transparent fw-100 text-i-gray border-0"
+                >
+                  Gift Cards
+                </li>
+                <li
+                  class="list-group-item fw-100 text-i-gray bg bg-transparent border-0"
+                >
+                  Terms of Use
+                </li>
+                <li
+                  class="list-group-item fw-100 text-i-gray bg bg-transparent border-0"
+                >
+                  Corporate Info
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
